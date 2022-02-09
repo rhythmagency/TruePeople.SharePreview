@@ -1,0 +1,38 @@
+﻿<div ng-controller="TP.SharePreview.Settings.Controller">
+    
+    <umb-editor-view>
+
+        <umb-editor-header name="pageName"
+                           name-locked="true"
+                           hide-icon="false"
+                           hide-description="false"
+                           hide-alias="true">
+        </umb-editor-header>
+
+        <umb-editor-container>
+
+            <p class="previewsettings-description"><localize key="shareablepreview_generaldesc">On this dashboard you can manage some of the settings of the shareable preview module.</localize></p>
+            <form ng-submit="saveSettings()">
+                <div class="previewsettings-field-wrapper">
+                    <span class="previewsettings-field-label">Private Key</span>
+                    <span class="previewsettings-field-description">
+                        <localize key="shareablepreview_privatekeydesc">This key is used to encrypt the node and version id into the url.</localize>
+                    </span>
+                    <input type="text" ng-model="settings.privateKey" name="privateKey" style="min-width: 400px;" /><br />
+                </div>
+                <div class="previewsettings-field-wrapper">
+                    <span class="previewsettings-field-label">
+                        <localize key="shareablepreview_notvalidurltitle">Not Valid Url</localize>
+                    </span>
+                    <span class="previewsettings-field-description">
+                        <localize key="shareablepreview_notvalidurldesc">Url where the user gets redirected to when the preview url is not valid anymore.</localize>
+                    </span>
+                    <input type="text" ng-model="settings.notValidUrl" name="notValidUrl" style="min-width: 400px;" />
+                </div>
+                <umb-button label-key="shareablepreview_settingssavebutton" class="previewsettings-savebutton" button-style="success" type="submit" state="submitButtonState" disabled="submitButtonState == 'busy'" />
+            </form>
+
+        </umb-editor-container>
+
+    </umb-editor-view>
+</div>

@@ -2,14 +2,14 @@
 <umbPackage>
   <info>
     <package>
-      <name>TruePeople.SharePreview</name>
+      <name>TruePeople.SharePreview.v7</name>
       <version></version>
-      <iconUrl>https://raw.githubusercontent.com/TruePeople/TruePeople.SharePreview/master/assets/icon-128.png</iconUrl>
+      <iconUrl>https://raw.githubusercontent.com/rhythmagency/TruePeople.SharePreview.v7/master/assets/icon-128.png</iconUrl>
       <licence url="https://opensource.org/licenses/MIT">MIT License</licence>
-      <url>https://github.com/TruePeople/TruePeople.SharePreview</url>
+      <url>https://github.com/rhythmagency/TruePeople.SharePreview.v7</url>
       <requirements type="strict">
-        <major>8</major>
-        <minor>2</minor>
+        <major>7</major>
+        <minor>7</minor>
         <patch>0</patch>
       </requirements>
     </package>
@@ -20,8 +20,8 @@
     <readme><![CDATA[Share preview URLs with non-Umbraco users!]]></readme>
   </info>
   <files>
-    <folder path="../src/TruePeople.SharePreview/App_Plugins/TruePeopleSharePreview" orgPath="App_Plugins/TruePeopleSharePreview" /> 
-    <file path="../src/TruePeople.SharePreview/bin/Debug/TruePeople.SharePreview.dll" orgPath="bin/TruePeople.SharePreview.dll" />
+    <folder path="../src/TruePeople.SharePreview.v7/App_Plugins/TruePeopleSharePreview" orgPath="App_Plugins/TruePeopleSharePreview" /> 
+    <file path="../src/TruePeople.SharePreview.v7/bin/Debug/TruePeople.SharePreview.v7.dll" orgPath="bin/TruePeople.SharePreview.v7.dll" />
   </files>
   <Actions />
   <control />
