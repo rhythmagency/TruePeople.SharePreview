@@ -9,14 +9,6 @@
             $scope.copyShareLink = function (link) {
                 sharePreviewCopyService.copyShareLink(link);
             };
-
-            eventsService.on("app.tabChange", function (name, args) {
-                if (args.alias == "umbContent" || args.alias == "umbInfo") {
-                    $scope.shouldShow = true;
-                } else {
-                    $scope.shouldShow = false;
-                }
-            });
         }
 
         var directive = {
