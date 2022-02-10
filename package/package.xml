@@ -21,7 +21,7 @@
   </info>
   <files>
     <folder path="../src/TruePeople.SharePreview.v7/App_Plugins/TruePeopleSharePreview" orgPath="App_Plugins/TruePeopleSharePreview" /> 
-    <file path="../src/TruePeople.SharePreview.v7/bin/Debug/TruePeople.SharePreview.v7.dll" orgPath="bin/TruePeople.SharePreview.v7.dll" />
+    <file path="../src/TruePeople.SharePreview.v7/bin/Release/TruePeople.SharePreview.v7.dll" orgPath="bin/TruePeople.SharePreview.v7.dll" />
   </files>
   <Actions />
   <control />

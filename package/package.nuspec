@@ -21,7 +21,7 @@
   </metadata>
   <files>
     <file src="..\assets\icon-128.png" target="images\" />
-    <file src="..\src\TruePeople.SharePreview.v7\bin\Debug\TruePeople.SharePreview.v7.dll" target="lib\net472\" />
+    <file src="..\src\TruePeople.SharePreview.v7\bin\Release\TruePeople.SharePreview.v7.dll" target="lib\net472\" />
     <file src="..\src\TruePeople.SharePreview.v7\App_Plugins\**" target="content/App_Plugins/"/>
   </files>
 </package>
