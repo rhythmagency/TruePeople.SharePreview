@@ -34,6 +34,11 @@ This will generate the packages inside the same folder.
 
 # Changelog
 
+## v1.0.1
+
+- Fixed bug where switching tabs in the backoffice would cause the share button to be hidden
+- Changed package build files to copy release DLLs instead of debug ones
+
 ## v1.0.0
 
 - Initial package release for Umbraco v7
