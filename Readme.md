@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/TruePeople.SharePreview.v7)
+[![NuGet package](https://img.shields.io/nuget/v/TruePeople.SharePreview.v7)](https://www.nuget.org/packages/TruePeople.SharePreview.v7)
 
 # TruePeople.SharePreview.v7
 Share preview URLs with non-Umbraco users! This project has been backported by Rhythm to Umbraco 7 from the original [TruePeople.SharePreview](https://github.com/TruePeople/TruePeople.SharePreview) plugin for Umbraco 8.
@@ -33,6 +33,10 @@ This will generate the packages inside the same folder.
 
 
 # Changelog
+
+## v1.0.2
+
+- Fixed null exception bug when checking if a shareable link exists for content without a template
 
 ## v1.0.1
 
