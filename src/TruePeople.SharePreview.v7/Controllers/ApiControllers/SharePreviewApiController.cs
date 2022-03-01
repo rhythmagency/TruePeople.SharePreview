@@ -32,7 +32,7 @@ namespace TruePeople.SharePreview.Controllers.ApiControllers
             var content = _contentService.GetById(nodeId);
             var latestContentVersion = _contentService.GetVersions(nodeId).FirstOrDefault();
             var wasEdited = VersionHelper.WasNodeEdited(content, latestContentVersion);
-            return wasEdited && !string.IsNullOrEmpty(content.Template.Alias) && !content.Trashed;
+            return wasEdited && !string.IsNullOrEmpty(content?.Template?.Alias) && !content.Trashed;
         }
 
         [HttpGet]
