@@ -49,6 +49,7 @@ namespace TruePeople.SharePreview.EventHandlers.Handlers
 
                 if (latestNodeVersion != null && latestNodeVersion.Version == sharePreviewContext.NewestVersionId && wasEdited)
                 {
+                    EnableForcedPreview(umbracoContext);
                     var page = umbracoContext.ContentCache.GetById(true, sharePreviewContext.NodeId);
 
                     //Since we don't use the base.PreparePublishedRequest, the culture isn't being set correctly.
@@ -110,6 +111,16 @@ namespace TruePeople.SharePreview.EventHandlers.Handlers
                 //Redirect to configured page.
                 HttpContext.Current.Response.Redirect(url);
             }
+        }
+
+        /// <summary>
+        /// Sets the current Umbraco context preview mode to true to ensure content
+        /// that has never been published before can be properly retrieved.
+        /// </summary>
+        /// <param name="umbracoContext"></param>
+        private void EnableForcedPreview(UmbracoContext umbracoContext)
+        {
+            umbracoContext.InPreviewMode = true;
         }
     }
 }
