@@ -34,6 +34,10 @@ This will generate the packages inside the same folder.
 
 # Changelog
 
+## v1.0.3
+
+- Fixed stack overflow exception bug when trying to preview content that has never been published before
+
 ## v1.0.2
 
 - Fixed null exception bug when checking if a shareable link exists for content without a template
